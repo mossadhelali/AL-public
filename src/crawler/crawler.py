@@ -4,7 +4,8 @@ import io
 import json
 import nbformat
 import os
-import re, urlparse
+import re 
+import urllib.parse
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
@@ -17,6 +18,7 @@ import sys
 import time
 import traceback
 import wget
+from urllib.parse import urljoin
 
 
 class Scraper(object):
@@ -149,7 +151,7 @@ class KaggleCrawler(Scraper):
                 EC.visibility_of_element_located(kernels_loading_msg)
             )
         except TimeoutException:
-            print "Timedout on scroll!"
+            print("Timedout on scroll!")
             pass
 
     def _infinite_scroll_kernels(self, n_scrolls=None, batch_size=10):
@@ -162,12 +164,12 @@ class KaggleCrawler(Scraper):
         curr = 0
         while n_scrolls is None or curr < n_scrolls:
             if curr % batch_size == 0:
-                print "Scroll: %d" % curr
+                print("Scroll: %d" % curr)
             current_height = self._get_height()
             self._blocked_scroll_down()
             new_height = self._get_height()
             if current_height == new_height:
-                print "Height unchanged"
+                print("Height unchanged")
                 return False
             curr += 1
         return True
@@ -180,7 +182,7 @@ class KaggleCrawler(Scraper):
         parsed_src = self.parse_source(self.browser.page_source)
         raw_links = parsed_src.findAll('a', {'class': 'scripts__item-name'})
         raw_links = set([
-            urlparse.urljoin(KaggleCrawler.KAGGLE_BASE, link['href'])
+             urljoin(KaggleCrawler.KAGGLE_BASE, link['href'])
             for link in raw_links
         ])
         # remove links we've already downloaded
@@ -207,7 +209,7 @@ class KaggleCrawler(Scraper):
         browser = self.get_browser()
         # size is important: otherwise we can end up with the mobile version
         browser.set_window_size(1000, 500)
-        kernels_site = urlparse.urljoin(KaggleCrawler.KAGGLE_BASE, 'kernels/')
+        kernels_site = urljoin(KaggleCrawler.KAGGLE_BASE, 'kernels/')
         browser.get(kernels_site)
 
     def _insert_into_db(self, db_conn, table, kernel):
@@ -281,12 +283,12 @@ class KaggleCrawler(Scraper):
                     self._insert_into_db(db_conn, table, k)
                     need -= 1
                 except Exception as err:
-                    print "Failed to download %s" % link
+                    print("Failed to download %s" % link)
                     traceback.print_exc()
                     # keep track of failures to avoid repeating
                     self.failed.add(link)
                     pass
-            print "%d/%d done" % (n - need, n)
+            print("%d/%d done" % (n - need, n))
 
 
 class KaggleKernel(Scraper):
@@ -303,11 +305,13 @@ class KaggleKernel(Scraper):
         return "KaggleKernel(%s)" % self.link
 
     def get(self, browser=None):
-        code_link = urlparse.urljoin(self.link + '/', 'code')
-        print "Downloading: %s" % code_link
+        code_link = urljoin(self.link + '/', 'code')
+        print("Downloading: %s" % code_link)
         if browser is None:
             browser = self.get_browser()
         browser.get(code_link)
+        browser.find_element_by_xpath("//span[@name='ellipsis-h']").click()
+        WebDriverWait(browser, 5).until(EC.presence_of_element_located, (By.XPATH, "//a[contains(@href, '/download')]"))
         parsed_src = self.parse_source(browser.page_source)
         code = self.parse_code(parsed_src)
         user = self.parse_user(parsed_src)
@@ -316,8 +320,8 @@ class KaggleKernel(Scraper):
 
     def parse_code(self, src):
         # now extract code text directly (rather than download as separate file)
-        r = re.compile('script-code-pane__download.*')
-        code_download_link = src.find('a', {'class': r})['href']
+        r = re.compile("/download")
+        code_download_link = 'https://www.kaggle.com' + src.find('a', href=r)['href']
         ext, contents = self._parse_raw_code(code_download_link)
         # keep track of file extension, can be useful later on
         self.file_ext = ext
@@ -333,7 +337,7 @@ class KaggleKernel(Scraper):
                     "Need to implement parsing for extension: %s" % ext
                 )
         except Exception as e:
-            print e.message
+            print(e.message)
         return self.code
 
     def _parse_notebook_code(self, txt):
@@ -394,8 +398,8 @@ class KaggleKernel(Scraper):
         return txt
 
     def parse_user(self, src):
-        r = re.compile('kernel-header__username.*')
-        self.user = src.find('a', {'class': r})['href'][1:]
+        r = re.compile('KernelViewerContext_AuthorThumbnailWrapper')
+        self.user = src.find('span', {'class': r}).find('a')['href'][1:]
         return self.user
 
     def parse_votes(self, src):
@@ -411,7 +415,7 @@ class KaggleKernel(Scraper):
     def _parse_raw_code(self, code_download_link):
         result = wget.download(code_download_link)
         assert (result)
-        print "\n"
+        print("\n")
         temp_file = open(result, 'r')
         code = temp_file.read()
         temp_file.close()
@@ -468,7 +472,7 @@ if __name__ == "__main__":
     db_conn = sqlite3.connect(args.db)
     if args.populate:
         prepop = kc.populate_downloaded(db_conn, args.table, col=args.col)
-        print "Already downloaded %d" % prepop
+        print("Already downloaded %d" % prepop)
     # download notebooks
     kc.crawl(db_conn, args.table, n=args.num)
     db_conn.close()

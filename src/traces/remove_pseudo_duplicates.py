@@ -28,59 +28,59 @@ def standardize(src):
   # janky standardization by removing leading white space etc
   return '\n'.join([e.strip() for e in s.split('\n') if len(e.strip()) > 0])  
 
-def show_issue():
-  """
-  Kaggle scripts have "pseudo-duplicates". These are scripts that have only marginally
-  changed from their parent fork, or from prior versions written by the same user, despite
-  saving down with different title. A lot of these are produced due to the ad-hoc
-  version control to reflect parameter changes, new features etc.
-  
-  The query below shows an example of this in the Kaggle database
-  
-  create temp table t as
-  select Scripts.Id as id, Scripts.AuthorUserId as user_id, ScriptContent, IsChange, title
-          from ScriptVersions, Scripts
-          where Scripts.CurrentScriptVersionId = ScriptVersions.Id
-          and Scripts.Id IS NOT NULL
-          and ScriptVersions.ScriptLanguageId = (select Id from ScriptLanguages where Name = "Python")
-          group by ScriptContent;
-  select title from t where user_id=81892;
-
-  ```
-  xgboost_v0
-  python_xgboost
-  Beating the Benchmark v1.0
-  Beating the Benchmark v1.1
-  ExtraTreesClassifier002
-  ExtraTreesClassifier (score 0.45911)
-  RFR Features (0.47203)
-  ```
-  """
-  
-  with open('../../data/meta-kaggle/traces.pkl', 'rb') as f:
-    traces = pickle.load(f)
-    src = [t[1] for t in traces if len(t[2]) > 0]
-    src = [s.strip() for s in src]
-    src = [s for s in src if len(s) > 0]
-    sorted_src = sorted(src)
-    dists = []
-    random.seed(1)
-    indices = set(range(0, len(standard)))
-    batch_size = 50
-    for batches in [1, 2, 3, 4]:
-      sample = list(random.sample(indices, batch_size))
-    for s_i, i in tqdm(enumerate(sample)):
-      for s_j in tqdm(range(s_i + 1, batch_size)):
-        j = sample[s_j]
-        s1 = standard[i]
-        s2 = standard[j]
-        d = editdistance.eval(s1, s2)
-        dists.append((i, j, d))
-    indices.difference_update(sample)
-  dists_df = pd.DataFrame(dists, columns=['i', 'j', 'd'])
-  dists_df = dists_df.sort_values('d')
-  return dists_df
-  
+# def show_issue():
+#   """
+#   Kaggle scripts have "pseudo-duplicates". These are scripts that have only marginally
+#   changed from their parent fork, or from prior versions written by the same user, despite
+#   saving down with different title. A lot of these are produced due to the ad-hoc
+#   version control to reflect parameter changes, new features etc.
+#
+#   The query below shows an example of this in the Kaggle database
+#
+#   create temp table t as
+#   select Scripts.Id as id, Scripts.AuthorUserId as user_id, ScriptContent, IsChange, title
+#           from ScriptVersions, Scripts
+#           where Scripts.CurrentScriptVersionId = ScriptVersions.Id
+#           and Scripts.Id IS NOT NULL
+#           and ScriptVersions.ScriptLanguageId = (select Id from ScriptLanguages where Name = "Python")
+#           group by ScriptContent;
+#   select title from t where user_id=81892;
+#
+#   ```
+#   xgboost_v0
+#   python_xgboost
+#   Beating the Benchmark v1.0
+#   Beating the Benchmark v1.1
+#   ExtraTreesClassifier002
+#   ExtraTreesClassifier (score 0.45911)
+#   RFR Features (0.47203)
+#   ```
+#   """
+#
+#   with open('../../data/meta-kaggle/traces.pkl', 'rb') as f:
+#     traces = pickle.load(f)
+#     src = [t[1] for t in traces if len(t[2]) > 0]
+#     src = [s.strip() for s in src]
+#     src = [s for s in src if len(s) > 0]
+#     sorted_src = sorted(src)
+#     dists = []
+#     random.seed(1)
+#     indices = set(range(0, len(standard)))
+#     batch_size = 50
+#     for batches in [1, 2, 3, 4]:
+#       sample = list(random.sample(indices, batch_size))
+#     for s_i, i in tqdm(enumerate(sample)):
+#       for s_j in tqdm(range(s_i + 1, batch_size)):
+#         j = sample[s_j]
+#         s1 = standard[i]
+#         s2 = standard[j]
+#         d = editdistance.eval(s1, s2)
+#         dists.append((i, j, d))
+#     indices.difference_update(sample)
+#   dists_df = pd.DataFrame(dists, columns=['i', 'j', 'd'])
+#   dists_df = dists_df.sort_values('d')
+#   return dists_df
+#
 def transitive_closure(pairs):
   """ 
   Returns transitive closure of sets based on inclusion 

@@ -244,18 +244,20 @@ def query_db(dbfile, language="Python"):
   """
   conn = sqlite3.connect(dbfile)
   c = conn.cursor()
-  py_scripts_query = f"""
-       select 
-         Scripts.AuthorUserId as user_id,
-         Scripts.ScriptProjectId AS project_id,
-         ScriptVersions.id as script_id,
-         Scripts.ForkParentScriptVersionId as parent_id,
-         ScriptVersions.ScriptContent as script
-      from ScriptVersions, Scripts
-        where Scripts.CurrentScriptVersionId = ScriptVersions.Id
-        and Scripts.Id IS NOT NULL
-        and ScriptVersions.ScriptLanguageId = (select Id from ScriptLanguages where Name = "{language}")
-        group by ScriptContent"""
+  # py_scripts_query = f"""
+  #      select
+  #        Scripts.AuthorUserId as user_id,
+  #        Scripts.ScriptProjectId AS project_id,
+  #        ScriptVersions.id as script_id,
+  #        Scripts.ForkParentScriptVersionId as parent_id,
+  #        ScriptVersions.ScriptContent as script
+  #     from ScriptVersions, Scripts
+  #       where Scripts.CurrentScriptVersionId = ScriptVersions.Id
+  #       and Scripts.Id IS NOT NULL
+  #       and ScriptVersions.ScriptLanguageId = (select Id from ScriptLanguages where Name = "{language}")
+  #       group by ScriptContent"""
+  py_scripts_query = f"select * from scripts where language='{language}';"
+
   print('Querying db...')
   c.execute(py_scripts_query)
   return c
@@ -289,8 +291,9 @@ def main(dbfile, tracefile, language):
     traces = []
     # use appropriate trace extraction
     get_trace = trace_from_script if language == "Python" else trace_from_notebook
-    for (user_id, project_id, script_id, parent_id, script) in tqdm(c.fetchall()):
-        script_info = ScriptInfo(user_id, project_id, script_id, parent_id)
+    # for (user_id, project_id, script_id, parent_id, script) in tqdm(c.fetchall()):
+    for (script_id, user_id, votes, language, script) in tqdm(c.fetchall()):
+        script_info = ScriptInfo(user_id, None, script_id, None)
         try:
             print(50 * "*")
             ct = get_trace(script)

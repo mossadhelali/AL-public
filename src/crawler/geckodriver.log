@@ -1,0 +1,411 @@
+1607381927107	geckodriver	INFO	Listening on 127.0.0.1:41011
+1607381927113	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekkjJZz"
+1607381931236	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1607381933344	Marionette	INFO	Enabled via --marionette
+1607381940508	Marionette	INFO	Listening on port 33187
+1607381965076	geckodriver	INFO	Listening on 127.0.0.1:56743
+1607381965081	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRIXcs8"
+1607381965315	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1607381966039	Marionette	INFO	Enabled via --marionette
+1607381968469	Marionette	INFO	Listening on port 46363
+1607382117102	geckodriver	INFO	Listening on 127.0.0.1:58933
+1607382117108	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5SU0Q1"
+1607382117336	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1607382118074	Marionette	INFO	Enabled via --marionette
+1607382120717	Marionette	INFO	Listening on port 41837
+1608586739631	geckodriver	INFO	Listening on 127.0.0.1:49049
+1608586740579	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeUdE9a"
+1608586741365	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608586742483	Marionette	INFO	Enabled via --marionette
+1608586747702	Marionette	INFO	Listening on port 40475
+1608586856528	geckodriver	INFO	Listening on 127.0.0.1:59945
+1608586856534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBg14JB"
+1608586856823	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608586857632	Marionette	INFO	Enabled via --marionette
+1608586860170	Marionette	INFO	Listening on port 45065
+1608587777995	geckodriver	INFO	geckodriver 0.20.1
+1608587778003	geckodriver	INFO	Listening on 127.0.0.1:59919
+1608587779080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QGrMQREL3W12"
+1608587779302	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608587780006	Marionette	INFO	Enabled via --marionette
+1608587783102	Marionette	INFO	Listening on port 42179
+1608587783208	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608587783257	Marionette	DEBUG	Register listener.js for window 2147483649
+1608587936284	geckodriver	INFO	geckodriver 0.20.1
+1608587936291	geckodriver	INFO	Listening on 127.0.0.1:47409
+1608587937299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.eARncc0939sp"
+1608587937539	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608587938274	Marionette	INFO	Enabled via --marionette
+1608587940855	Marionette	INFO	Listening on port 38989
+1608587940953	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608587941003	Marionette	DEBUG	Register listener.js for window 2147483649
+1608587941111	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608587941448	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608587941448	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608587943434	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/kernels/"
+1608587944725	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/kernels/"
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4B0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 6169] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-l1g98U/firefox-56.0+build6/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1608589220058	geckodriver	INFO	geckodriver 0.20.1
+1608589220062	geckodriver	INFO	Listening on 127.0.0.1:57465
+1608589220175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LIykzzBI7eZY"
+1608589222421	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608589223433	Marionette	INFO	Enabled via --marionette
+1608589227213	Marionette	INFO	Listening on port 33639
+1608589227315	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608589227366	Marionette	DEBUG	Register listener.js for window 2147483649
+1608589258711	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608589259229	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608589259229	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608589261237	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608589294171	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=712e0e920cc2576a2179, line 20: Error: Request timed out or cancelled by the caller
+1608589308268	Marionette	DEBUG	Register listener.js for window 4294967297
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+1608589394041	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608589394510	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608589394515	Marionette	DEBUG	Received DOM event "unload" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608589395813	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608589395952	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483655"
+1608589395952	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483656"
+1608589395953	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1608589395953	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483653"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608589428476	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=712e0e920cc2576a2179, line 20: Error: Request timed out or cancelled by the caller
+1608589464463	geckodriver	INFO	geckodriver 0.20.1
+1608589464468	geckodriver	INFO	Listening on 127.0.0.1:38091
+1608589465494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XRWEVPHsEtGZ"
+1608589465791	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608589466513	Marionette	INFO	Enabled via --marionette
+1608589469197	Marionette	INFO	Listening on port 40943
+1608589469244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608589469296	Marionette	DEBUG	Register listener.js for window 2147483649
+1608589480637	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608589481112	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608589481113	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608589483277	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608589490631	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608589543069	Marionette	DEBUG	Register listener.js for window 2147483661
+console.error: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js
+    - lineNumber = 464
+    - location = {"name":"onResponse","language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js","lineNumber":464,"columnNumber":23,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/NetUtil.jsm","name":"onStopRequest","lineNumber":131,"columnNumber":17,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"onStopRequest@resource://gre/modules/NetUtil.jsm:131:17\n","nativeSavedFrame":{}},"formattedStack":"onResponse@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js:464:23\nonStopRequest@resource://gre/modules/NetUtil.jsm:131:17\n","nativeSavedFrame":{}}
+    - message = Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+    - name = NS_BASE_STREAM_CLOSED
+    - result = 2152136706
+    - stack = onResponse@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js:464:23|onStopRequest@resource://gre/modules/NetUtil.jsm:131:17|
+  - prototype Object
+onResponse@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js:464:23
+onStopRequest@resource://gre/modules/NetUtil.jsm:131:17
+console.error: 
+  Protocol error (unknownError): Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=f73ff056593e64af17e6, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=c005a4739f70b6c939a7, line 1458: TypeError: e.getAttribute is not a function
+console.error: 
+  stylesheets actor: fetch failed for https://www.kaggle.com/static/assets/app.css?v=bf0bb12fe67ce54d2ef1, using system principal instead.
+console.error: 
+  Message: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [inIDeepTreeWalker.currentNode]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js :: DocumentWalker :: line 3023"  data: no]
+  Stack:
+    DocumentWalker@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:3023:29
+getDocumentWalker@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:961:12
+index@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:88:26
+get data@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:63:7
+_searchIndex@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:172:1
+search@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:228:5
+search@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:1655:19
+handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1081:19
+onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1799:15
+receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:761:7
+
+DocumentWalker@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:3023:29
+getDocumentWalker@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:961:12
+index@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:88:26
+get data@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:63:7
+_searchIndex@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:172:1
+search@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/walker-search.js:228:5
+search@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:1655:19
+handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1081:19
+onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1799:15
+receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:761:7
+console.error: 
+  Protocol error (unknownError): Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [inIDeepTreeWalker.currentNode]
+onPacket threw an exception: Error: Server did not specify an actor, dropping packet: {"error":"unknownError","message":"error occurred while processing 'detach: TypeError: this.walker is null\nStack: get conn@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:223:5\nparent@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:748:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:833:18\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:924:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:232:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:850:9\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:924:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:81:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:850:9\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:924:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:2733:5\nremoveActor@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/common.js:261:7\nAPDestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/common.js:224:7\nremoveActorPool/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1577:27\nremoveActorPool@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1577:9\n_detach@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/tab.js:912:7\nonDetach@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/tab.js:954:10\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1799:15\nreceiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:761:7\nLine: 223, column: 5"}
+Stack: onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/client/main.js:944:9
+send/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:570:13
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+Line: 944, column: 9
+console.error: 
+  onPacket threw an exception: Error: Server did not specify an actor, dropping packet: {"error":"unknownError","message":"error occurred while processing 'detach: TypeError: this.walker is null\nStack: get conn@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:223:5\nparent@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:748:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:833:18\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:924:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:232:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:850:9\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:924:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:81:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:850:9\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:924:5\ndestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/inspector.js:2733:5\nremoveActor@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/common.js:261:7\nAPDestroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/common.js:224:7\nremoveActorPool/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1577:27\nremoveActorPool@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1577:9\n_detach@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/tab.js:912:7\nonDetach@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/tab.js:954:10\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1799:15\nreceiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:761:7\nLine: 223, column: 5"}
+Stack: onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/client/main.js:944:9
+send/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:570:13
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+Line: 944, column: 9
+JavaScript error: chrome://devtools/content/inspector/inspector.js, line 167: TypeError: this._toolbox is null
+JavaScript error: chrome://devtools/content/inspector/inspector.js, line 167: TypeError: this._toolbox is null
+1608590476360	geckodriver	INFO	geckodriver 0.20.1
+1608590476367	geckodriver	INFO	Listening on 127.0.0.1:50267
+1608590477412	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.L1ULEfzqkCPT"
+1608590477763	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608590478557	Marionette	INFO	Enabled via --marionette
+1608590481648	Marionette	INFO	Listening on port 35571
+1608590481741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608590481792	Marionette	DEBUG	Register listener.js for window 2147483649
+1608590481852	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608590482323	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608590482323	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608590484387	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608590517020	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=712e0e920cc2576a2179, line 20: Error: Request timed out or cancelled by the caller
+1608590739974	Marionette	DEBUG	Register listener.js for window 4294967297
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[GFX1-]: Unrecognized feature WEBRENDER
+1608591023855	geckodriver	INFO	geckodriver 0.20.1
+1608591023860	geckodriver	INFO	Listening on 127.0.0.1:34705
+1608591024876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vHZrjr1OMhge"
+1608591025127	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608591025847	Marionette	INFO	Enabled via --marionette
+1608591028490	Marionette	INFO	Listening on port 41413
+1608591028618	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608591028670	Marionette	DEBUG	Register listener.js for window 2147483649
+1608591028715	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608591029176	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608591029177	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608591031076	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608591063739	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=712e0e920cc2576a2179, line 20: Error: Request timed out or cancelled by the caller
+[GFX1-]: Unrecognized feature WEBRENDER
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11218] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-l1g98U/firefox-56.0+build6/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1608591829244	geckodriver	INFO	geckodriver 0.20.1
+1608591829255	geckodriver	INFO	Listening on 127.0.0.1:50921
+1608591830271	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.4vRqdN2QjBI7"
+1608591831683	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608591832564	Marionette	INFO	Enabled via --marionette
+1608591835568	Marionette	INFO	Listening on port 41435
+1608591835619	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608591835667	Marionette	DEBUG	Register listener.js for window 2147483649
+1608591835719	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608591836183	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608591836184	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608591838474	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608591845177	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608591887294	geckodriver	INFO	geckodriver 0.20.1
+1608591887299	geckodriver	INFO	Listening on 127.0.0.1:54229
+1608591888319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DEjZuKomEUds"
+1608591888559	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608591889313	Marionette	INFO	Enabled via --marionette
+1608591891988	Marionette	INFO	Listening on port 33625
+1608591892074	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608591892131	Marionette	DEBUG	Register listener.js for window 2147483649
+1608591892179	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608591893778	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608591893779	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608591896455	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608591903893	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608591985302	geckodriver	INFO	geckodriver 0.20.1
+1608591985307	geckodriver	INFO	Listening on 127.0.0.1:37777
+1608591986323	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MDObJSJEecIc"
+1608591986578	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608591987293	Marionette	INFO	Enabled via --marionette
+1608591989918	Marionette	INFO	Listening on port 36763
+1608591989961	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608591990009	Marionette	DEBUG	Register listener.js for window 2147483649
+1608591990075	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608591991285	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608591991285	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608591999835	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608592007537	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+console.error: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js
+    - lineNumber = 464
+    - location = {"name":"onResponse","language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js","lineNumber":464,"columnNumber":23,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/NetUtil.jsm","name":"onStopRequest","lineNumber":131,"columnNumber":17,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"onStopRequest@resource://gre/modules/NetUtil.jsm:131:17\n","nativeSavedFrame":{}},"formattedStack":"onResponse@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js:464:23\nonStopRequest@resource://gre/modules/NetUtil.jsm:131:17\n","nativeSavedFrame":{}}
+    - message = Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+    - name = NS_BASE_STREAM_CLOSED
+    - result = 2152136706
+    - stack = onResponse@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js:464:23|onStopRequest@resource://gre/modules/NetUtil.jsm:131:17|
+  - prototype Object
+onResponse@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/DevToolsUtils.js:464:23
+onStopRequest@resource://gre/modules/NetUtil.jsm:131:17
+console.error: 
+  Protocol error (unknownError): Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1608592473464	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[GFX1-]: Unrecognized feature WEBRENDER
+1608592873800	geckodriver	INFO	geckodriver 0.20.1
+1608592873805	geckodriver	INFO	Listening on 127.0.0.1:37079
+1608592873814	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uZFD9gPhKm9M"
+1608592874248	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608592875098	Marionette	INFO	Enabled via --marionette
+1608592877855	Marionette	INFO	Listening on port 33929
+1608592877980	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608592878033	Marionette	DEBUG	Register listener.js for window 2147483649
+1608592878076	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608592878521	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608592878521	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608592880531	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608592913102	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=712e0e920cc2576a2179, line 20: Error: Request timed out or cancelled by the caller
+1608592913516	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1608592997998	geckodriver	INFO	geckodriver 0.20.1
+1608592998003	geckodriver	INFO	Listening on 127.0.0.1:40229
+1608592999018	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.dn6gnvNPNctb"
+1608592999319	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608593000055	Marionette	INFO	Enabled via --marionette
+1608593002800	Marionette	INFO	Listening on port 40565
+1608593002842	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608593002891	Marionette	DEBUG	Register listener.js for window 2147483649
+1608593002944	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608593003387	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608593003388	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608593005262	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608593012818	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593013225	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/runtime.js?v=e85a629cf400de63253f, line 1: Error: Loading chunk 14 failed.
+(error: https://www.kaggle.com/static/assets/14.88942b068c70f626be0e.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=3333a2f5bbfb7ee28812, line 2: TypeError: n.context is undefined
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[GFX1-]: Unrecognized feature WEBRENDER
+console.error: 
+  Message: TypeError: this.nodeHierarchy[this.currentIndex] is undefined
+  Stack:
+    scroll@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js:764:11
+update/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js:910:9
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+1608593837108	geckodriver	INFO	geckodriver 0.20.1
+1608593837114	geckodriver	INFO	Listening on 127.0.0.1:38229
+1608593837193	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.GY2MI6rijz9a"
+1608593838867	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608593840193	Marionette	INFO	Enabled via --marionette
+1608593844258	Marionette	INFO	Listening on port 33135
+1608593844493	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608593844546	Marionette	DEBUG	Register listener.js for window 2147483649
+1608593844601	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608593845128	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608593845128	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608593847454	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608593855677	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593856090	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1608593878744	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593879077	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593879086	Marionette	DEBUG	Received DOM event "unload" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593879977	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593880049	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483655"
+1608593880049	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483656"
+1608593880050	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1608593880050	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483653"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608593884442	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608593885336	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[GFX1-]: Unrecognized feature WEBRENDER
+1608594487620	geckodriver	INFO	geckodriver 0.20.1
+1608594487626	geckodriver	INFO	Listening on 127.0.0.1:58977
+1608594488668	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uFicpg1siQ99"
+1608594488899	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608594489601	Marionette	INFO	Enabled via --marionette
+1608594492292	Marionette	INFO	Listening on port 46685
+1608594492428	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608594492484	Marionette	DEBUG	Register listener.js for window 2147483649
+1608594492523	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608594494201	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608594494202	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608594497807	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608594511801	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608594512182	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1608595051920	geckodriver	INFO	geckodriver 0.20.1
+1608595051925	geckodriver	INFO	Listening on 127.0.0.1:36915
+1608595052944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Yv7e0ze4VY9L"
+1608595053354	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608595054017	Marionette	INFO	Enabled via --marionette
+1608595056730	Marionette	INFO	Listening on port 41891
+1608595056778	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608595056830	Marionette	DEBUG	Register listener.js for window 2147483649
+1608595056875	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608595057615	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608595057615	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608595059836	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608595070091	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608595070480	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1608595075277	geckodriver	INFO	geckodriver 0.20.1
+1608595075287	geckodriver	INFO	Listening on 127.0.0.1:41961
+1608595076315	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8WW0ecv8JApf"
+1608595076551	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608595077288	Marionette	INFO	Enabled via --marionette
+1608595079870	Marionette	INFO	Listening on port 38535
+1608595079939	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608595079985	Marionette	DEBUG	Register listener.js for window 2147483649
+1608595080048	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608595080577	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608595080578	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608595082741	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/vitorgamalemos/boston-crimes-dataset/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608595088915	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/vitorgamalemos/boston-crimes-dataset/code"
+1608595089277	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1608595092434	geckodriver	INFO	geckodriver 0.20.1
+1608595092446	geckodriver	INFO	Listening on 127.0.0.1:53563
+1608595093502	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zNqi30uLPqpo"
+1608595093738	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608595094478	Marionette	INFO	Enabled via --marionette
+1608595097268	Marionette	INFO	Listening on port 37831
+1608595097340	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608595097387	Marionette	DEBUG	Register listener.js for window 2147483649
+1608595097437	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608595097899	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608595097900	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608595099791	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/biphili/boston-crime-prediction/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608595104556	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/biphili/boston-crime-prediction/code"
+1608595104909	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1608596489918	geckodriver	INFO	geckodriver 0.20.1
+1608596489923	geckodriver	INFO	Listening on 127.0.0.1:52247
+1608596490942	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.7oXi4vc0euEc"
+1608596491187	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1608596491923	Marionette	INFO	Enabled via --marionette
+1608596494775	Marionette	INFO	Listening on port 43127
+1608596494870	Marionette	WARN	TLS certificate errors will be ignored for this session
+1608596494920	Marionette	DEBUG	Register listener.js for window 2147483649
+1608596494969	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1608596495428	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1608596495429	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1608596497733	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1608596505705	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.kaggle.com/utkukubilay/boston-crimes-eda/code"
+1608596506119	Marionette	DEBUG	Canceled page load listener because no navigation has been detected

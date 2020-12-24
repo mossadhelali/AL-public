@@ -9,7 +9,7 @@ def insert_records(official, crawled):
     conn = sqlite3.connect(official)
     cursor = conn.cursor()
     # temporary table with python scripts only
-    print "Setting up temporary table with existing Python code"
+    print("Setting up temporary table with existing Python code")
     cursor.execute(
         """
     create temp table pycode as
@@ -37,7 +37,7 @@ def insert_records(official, crawled):
     not_dupes = not_dupes.merge(language_info, on='language', how='left')
 
     recs = 0
-    print "Inserting records"
+    print("Inserting records")
     for _, row in not_dupes.iterrows():
         cursor.execute(
             "INSERT INTO ScriptVersions(Id, ScriptLanguageId, ScriptContent) VALUES(?, ?, ?)",

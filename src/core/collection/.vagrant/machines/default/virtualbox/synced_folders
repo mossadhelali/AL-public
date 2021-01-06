@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/AL-public":{"guestpath":"/home/vagrant/AL-public","hostpath":"/Users/mossad/personal_projects/AL-public","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/mossad/personal_projects/AL-public/src/core/collection","disabled":false,"__vagrantfile":true}}}

@@ -6,7 +6,7 @@ import astunparse
 import copy
 import inspect
 
-from instrumentation import instrument
+from src.core.instrumentation import instrument
 
 
 class NodeExtender(ast.NodeTransformer):
@@ -18,9 +18,7 @@ class NodeExtender(ast.NodeTransformer):
 
     # ignore these as they bind local variables which
     # we can't hoist easily
-    IGNORE = set([
-        ast.Lambda, ast.GeneratorExp, ast.ListComp, ast.SetComp, ast.DictComp
-    ])
+    IGNORE = {ast.Lambda, ast.GeneratorExp, ast.ListComp, ast.SetComp, ast.DictComp}
 
     def visit(self, node):
         if type(node) in NodeExtender.IGNORE:
@@ -105,7 +103,7 @@ class Instrument(NodeExtender):
         # append it after the first set of imports
         # otherwise python may complain if there is a `from __future__` import
         for i, stmt in enumerate(t.body):
-            if type(stmt) not in set([ast.Import, ast.ImportFrom]):
+            if type(stmt) not in {ast.Import, ast.ImportFrom}:
                 imp_stmts = fix_matplotlib
                 for j, stmt in enumerate(imp_stmts):
                     t.body.insert(i + j, stmt)

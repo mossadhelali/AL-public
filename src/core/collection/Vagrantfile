@@ -5,9 +5,9 @@ require "set"
 VAGRANT_BOX = "ubuntu/xenial64"
 VM_NAME = 'crowdlearn'
 # in MB
-VM_MEMORY = 100000
-VM_DISK = '120GB'
-VM_CPUS = 8
+VM_MEMORY = 8000
+VM_DISK = '25GB'
+VM_CPUS = 4
 
 
 # very basic, since we can just ssh after to setup environment as needed
@@ -17,8 +17,9 @@ Vagrant.configure(2) do |config|
   # set up disk size (this requires the vagrant-disksize plugin)
   config.disksize.size = VM_DISK
 
-  config.vm.synced_folder ".", ".", create: false, disabled: true
+  config.vm.synced_folder "../../../", "/home/vagrant/AL-public"
 
+  config.vm.network "private_network", ip: "55.55.55.5"
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui    = false
@@ -26,7 +27,7 @@ Vagrant.configure(2) do |config|
     vb.cpus   = VM_CPUS
     vb.memory = VM_MEMORY
     # remove logging that ubuntu/xenial64 box does by default
-    vb.customize ["modifyvm", :id, "--uartmode1", "disconnected"]
+#     vb.customize ["modifyvm", :id, "--uartmode1", "disconnected"]
   end
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
@@ -52,13 +53,13 @@ Vagrant.configure(2) do |config|
    apt-get install -y zip
   SHELL
 
-  # copy in folder for transfer stuff/data
-  config.vm.provision "file", source: "/raid/jcamsan/crowdlearn.zip", destination:"$HOME/crowdlearn.zip"
-
-  # unzip and prepare for the docker builder
-  config.vm.provision "shell", privileged: false, inline: <<-SHELL
-    unzip ${HOME}/crowdlearn.zip -d ${HOME}/
-  SHELL
+#   # copy in folder for transfer stuff/data
+#   config.vm.provision "file", source: "/raid/jcamsan/crowdlearn.zip", destination:"$HOME/crowdlearn.zip"
+#
+#   # unzip and prepare for the docker builder
+#   config.vm.provision "shell", privileged: false, inline: <<-SHELL
+#     unzip ${HOME}/crowdlearn.zip -d ${HOME}/
+#   SHELL
 
 
 end

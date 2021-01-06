@@ -216,7 +216,7 @@ class KaggleCrawler(Scraper):
         db_cursor = db_conn.cursor()
         try:
             nvalues = len(kernel.values())
-            insert_cmd = 'INSERT INTO %s VALUES(%s)' % (
+            insert_cmd = 'INSERT INTO %s(link, user, votes, language, code) VALUES(%s)' % (
                 table, ','.join(['?'] * nvalues)
             )
             db_cursor.execute(insert_cmd, kernel.values())

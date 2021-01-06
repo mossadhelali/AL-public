@@ -276,7 +276,7 @@ def trace_from_notebook(code):
 
 class ScriptInfo(object):
   # contains info that we use about script to remove duplicates later on
-  def __init__(self, user_id, project_id, script_id, parent_id=None):
+  def __init__(self, user_id, project_id, script_id, script_url, parent_id=None):
     self.user_id = user_id
     self.project_id = project_id
     self.script_id = script_id
@@ -292,8 +292,9 @@ def main(dbfile, tracefile, language):
     # use appropriate trace extraction
     get_trace = trace_from_script if language == "Python" else trace_from_notebook
     # for (user_id, project_id, script_id, parent_id, script) in tqdm(c.fetchall()):
-    for (script_id, user_id, votes, language, script) in tqdm(c.fetchall()):
-        script_info = ScriptInfo(user_id, None, script_id, None)
+    for (script_id, script_url, user_id, votes, language, script) in tqdm(c.fetchall()):
+        print('CHANGE ME: using a fixed project ID: 70')
+        script_info = ScriptInfo(user_id, 70, script_id, script_url, None)
         try:
             print(50 * "*")
             ct = get_trace(script)

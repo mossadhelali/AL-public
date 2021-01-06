@@ -16,9 +16,9 @@ import subprocess
 import tempfile
 import time
 
-from collection import errors
-from instrumentation import transforms
-from traces import *
+from src.core.collection import errors
+from src.core.instrumentation import transforms
+from src.traces.traces import *
 
 import numpy as np
 
@@ -36,13 +36,7 @@ def read_log(log_file):
 
 
 class DataCollector(object):
-    def __init__(
-            self,
-            timeout='10m',
-            sleep=1,
-            max_concurrent_scripts=3,
-            log_file=None,
-    ):
+    def __init__(self, timeout='10m', sleep=1, max_concurrent_scripts=3, log_file=None):
         """
     Collect data by spinning up multiple processes, each executing an instrumented Kaggle script
     :param timeout: Time after which to fail executing kaggle script with timeout error
@@ -69,19 +63,19 @@ class DataCollector(object):
         project_traces = defaultdict(lambda: [])
         # use static traces we had already collected for simplicity...
         traces_file_nm = os.path.abspath(
-            os.path.join(DATA_ROOT, "meta-kaggle/clean-traces.pkl")
+            # os.path.join(DATA_ROOT, "meta-kaggle/clean-traces.pkl")   # TODO MOSSAD: change back to original once the cleaned traces are obtained
+            os.path.join(DATA_ROOT, "extracted-traces.pkl")
         )
         with open(traces_file_nm, 'rb') as f:
             all_traces = pickle.load(f)
             # filter to only consider scripts that use sklearn at least once
-            sklearn_traces = [
-                t for t in all_traces if self.uses_sklearn(t[-1])
-            ]
+            sklearn_traces = [t for t in all_traces if self.uses_sklearn(t[-1])]
             print("All traces: %d" % len(all_traces))
             print("Sklearn traces: %d" % len(sklearn_traces))
             for t in sklearn_traces:
                 project_id = t[0].project_id
                 if project_id in project_ids:
+                    print('Got Project ID:', project_id)
                     project_traces[project_id].append(t)
         return project_traces
 
@@ -92,7 +86,7 @@ class DataCollector(object):
             else:
                 perms = 'a'
             with open(self.log_file, perms) as f:
-                f.write("%d:%d\n" % (script_id, status))
+                f.write("{}:{}\n".format(script_id, status))
 
     def read_log(self):
         if self.log_file is not None and os.path.exists(self.log_file):
@@ -100,16 +94,7 @@ class DataCollector(object):
         else:
             return {}
 
-    def dispatch_scripts(
-            self,
-            target_n,
-            traces,
-            exec_dir,
-            exclude,
-            output_dir=None,
-            as_original=False,
-            sequential=False,
-    ):
+    def dispatch_scripts(self, target_n, traces, exec_dir, exclude, output_dir=None, as_original=False, sequential=False):
         """ Dispatch a new set of scripts for concurrent execution """
         while len(self.active_scripts) < min(
                 target_n, self.max_concurrent_scripts) and len(traces) > 0:
@@ -135,10 +120,8 @@ class DataCollector(object):
                 )
                 timeout_cmd = ['timeout', self.timeout]
                 python_cmd = ['python3']
-                kaggle_cmd = [
-                    './execute_kaggle.py', src_file.name, '--file', '--id',
-                    str(src_id), '--dir', exec_dir, '--write', out_file_name
-                ]
+                kaggle_cmd = ['./execute_kaggle.py', src_file.name, '--file', '--id',
+                              str(src_id), '--dir', exec_dir, '--write', out_file_name]
                 if as_original:
                     kaggle_cmd += ["--as_original"]
                 combined_cmd = timeout_cmd + python_cmd + kaggle_cmd
@@ -179,15 +162,8 @@ class DataCollector(object):
         self.active_scripts = still_executing
         return ct_new_finished
 
-    def collect_data(
-            self,
-            scripts_per_project,
-            project_ids,
-            script_ids=None,
-            as_original=False,
-            output_dir=None,
-            sequential=False,
-    ):
+    def collect_data(self, scripts_per_project, project_ids, script_ids=None, as_original=False, output_dir=None,
+                     sequential=False):
         """ Collect instrumented data for a number of scripts in relevant project ids """
         project_traces = self.collect_script_sources(project_ids)
         if script_ids is not None:
@@ -201,24 +177,12 @@ class DataCollector(object):
         # load in anything we've done or tried to do and failed before
         exclude = self.read_log()
         # run timeouts again, sometimes these complete
-        exclude = {
-            k: v
-            for k, v in exclude.items() if v != errors.ERROR_TIMEOUT
-        }
+        exclude = {k:v for k, v in exclude.items() if v != errors.ERROR_TIMEOUT}
+
         for project_id, traces in project_traces.items():
-            exec_dir = os.path.expanduser(
-                os.path.join(
-                    DATA_ROOT,
-                    "executed",
-                    "project_{}".format(project_id),
-                    "scripts",
-                )
-            )
+            exec_dir = os.path.expanduser(os.path.join(DATA_ROOT, "executed", "project_{}".format(project_id), "scripts"))
             exec_dir = os.path.abspath(exec_dir)
-            print(
-                "Executing Kaggle scripts from %s (%d possible)" %
-                (exec_dir, len(traces))
-            )
+            print("Executing Kaggle scripts from %s (%d possible)" % (exec_dir, len(traces)))
             n_collected = 0
             if script_ids is None:
                 # hack to keep running and try to runn
@@ -334,7 +298,7 @@ def main():
     # number of scripts to collect for each kaggle project id
     scripts_per_project = 100
     # kaggle project ids
-    project_ids = set([25, 70, 61, 13, 66, 29, 24, 12, 40])
+    project_ids = {25, 70, 61, 13, 66, 29, 24, 12, 40}
     collector.collect_data(
         scripts_per_project,
         project_ids,

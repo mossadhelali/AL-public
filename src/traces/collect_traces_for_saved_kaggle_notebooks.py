@@ -2,11 +2,12 @@ from src.traces.traces import main as traces_main
 import pandas as pd
 
 def main():
-    db_path = '/home/mosemos/projects/al-public/src/crawler/crawled_kaggle.db'
-    traces_path = '/home/mosemos/projects/al-public/src/traces/extracted-traces.pkl'
-    clean_traces_path = '/home/mosemos/projects/al-public/src/traces/clean-traces.pkl'
+    db_path = '/Users/mossad/personal_projects/AL-public/src/crawler/crawled_kaggle.db'
+    traces_path = '/Users/mossad/personal_projects/AL-public/src/traces/extracted-traces.pkl'
+    clean_traces_path = '/Users/mossad/personal_projects/AL-public/src/traces/clean-traces.pkl'
 
-    language = 'IPython Notebook'
+    # language = 'IPython Notebook'
+    language = 'Python'
 
     traces_main(db_path, traces_path, language)
 

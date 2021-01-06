@@ -87,17 +87,17 @@ def canonical_type_name(t):
 
 def is_numeric_type(dtype):
     # based on https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.dtypes.html
-    numeric_kinds = set(['i', 'u', 'f', 'c'])
+    numeric_kinds = {'i', 'u', 'f', 'c'}
     return dtype.kind in numeric_kinds
 
 
 def is_nominal_type(dtype):
-    nominal_kinds = set(['O', 'S', 'a', 'U'])
+    nominal_kinds = {'O', 'S', 'a', 'U'}
     return dtype.kind in nominal_kinds
 
 
 def is_boolean_type(dtype):
-    bool_types = set(['?', 'b'])
+    bool_types = {'?', 'b'}
     return dtype.kind in bool_types
 
 

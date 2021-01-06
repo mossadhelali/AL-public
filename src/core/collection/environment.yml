@@ -1,4 +1,4 @@
-name: oopsla-rev
+name: kaggle
 channels:
   - conda-forge
   - defaults

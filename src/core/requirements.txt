@@ -12,3 +12,4 @@ tqdm==4.19.4
 xgboost==0.6a2
 stopit==1.1.2
 html5lib
+graphviz==0.16

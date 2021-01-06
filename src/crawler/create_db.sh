@@ -7,10 +7,11 @@ fi
 crawled_db='crawled_kaggle.db'
 official_db='../../data/meta-kaggle/database.sqlite'
 table_name='scripts'
-table_definition="CREATE TABLE IF NOT EXISTS ${table_name}(link text, user text, votes integer, language text, code text)"
+table_definition="CREATE TABLE scripts(id INTEGER primary key AUTOINCREMENT, link text, user text, votes integer, language text, code text);"
 
 # echo "==> Creating sqlite3 database: ${crawled_db}"
-# sqlite3 $db_name "${table_definition}"
+# sqlite3 $
+# db_name "${table_definition}"
 
 echo "==> Collecting kernels"
 python crawler.py $crawled_db $table_name --language python --sort 'most votes' --populate --num $1

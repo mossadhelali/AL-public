@@ -22,9 +22,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, make_scorer
 from sklearn.model_selection import KFold
 
-import synthesis.meta_features as mf
-from synthesis import tag
-from traces import *
+import src.core.synthesis.meta_features as mf
+from src.core.synthesis import tag
+from src.traces.traces import *
 
 START_LABEL = '<START>'
 
@@ -57,9 +57,7 @@ def remove_bad_features(d):
     for k, v in d.items():
         bad = False
         # bad features, remove
-        bad = k in set([
-            'num_rows_sampled',
-        ])
+        bad = k in {'num_rows_sampled'}
 
         # bad values
         try:

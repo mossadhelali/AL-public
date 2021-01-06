@@ -9,11 +9,11 @@ from tqdm import tqdm
 tqdm.monitor_interval = 0
 import warnings
 
-from synthesis import program
-from synthesis.learn import get_predictor, get_all_transforms, get_all_models
+from src.core.synthesis import program
+from src.core.synthesis.learn import get_predictor, get_all_transforms, get_all_models
+from src.core.synthesis.runtime_helpers import ColumnLoop
+from src.core.synthesis import tag
 from sklearn.linear_model import LogisticRegression
-from synthesis.runtime_helpers import ColumnLoop
-from synthesis import tag
 
 MAX_COLS_LOOP = 3000
 

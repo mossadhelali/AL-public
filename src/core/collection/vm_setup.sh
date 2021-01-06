@@ -9,14 +9,15 @@ sudo apt-get install screen
 sudo apt-get upgrade python3
 sudo apt-get install ipython3
 sudo apt-get install python3-pip
-sudo pip install numpy
-sudo pip install pandas
+pip3 install -U pip
+sudo pip3 install numpy
+sudo pip3 install pandas
 sudo apt-get install vim
 
 # install docker
 # https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 sudo apt-get install \
-    linux-image-extra-$(uname -r) \
+    linux-image-extra-4.4.0-21-generic \
     linux-image-extra-virtual
 
 sudo apt-get install \

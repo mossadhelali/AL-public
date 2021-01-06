@@ -1,7 +1,6 @@
 # Wrapper to execute a dynamically instrumented Kaggle script in the
 # correct directory and save down results as a pickled list
 
-from __future__ import print_function
 import ast
 import argparse
 import os
@@ -10,10 +9,11 @@ sys.path.append('../')
 import traceback
 import time
 
-from collection import errors
-from instrumentation.instrument import DynamicInstrumentation
-from synthesis.meta_features import DirectSummarizer
-from instrumentation import transforms
+from src.core.collection import errors
+from src.core.instrumentation.instrument import DynamicInstrumentation
+from src.core.synthesis.meta_features import DirectSummarizer
+from src.core.instrumentation import transforms
+
 
 
 def run_instrumented(code, _instr, instr_nm):
@@ -37,14 +37,7 @@ def log_time(file_name, dur):
         fout.write(str(dur))
 
 
-def run(
-        code,
-        src_id,
-        exec_dir,
-        write,
-        partial,
-        as_original=False,
-):
+def run(code, src_id, exec_dir, write, partial, as_original=False):
     print("Executing script: %d" % src_id)
     _instr = DynamicInstrumentation(
         relevant_modules=['sklearn', 'xgboost'],

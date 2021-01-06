@@ -7,14 +7,13 @@ sys.path.insert(0, os.path.join(script_path, '../../src/'))
 
 from argparse import ArgumentParser
 import astunparse
-from chunker import utils
 from chunker.utils import mapl, flatten, map_nested, get_fun_lib, get_fun_name
 from difflib import SequenceMatcher
 import pandas as pd
 import pickle
 import random
 from tqdm import tqdm
-from traces import *
+from src.traces.traces import *
 
 # SequenceMatcher.quick_ratio threshold
 # values above this are considered to be too similar for our

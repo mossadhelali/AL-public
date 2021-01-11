@@ -11,7 +11,7 @@ def main():
 
     traces_main(db_path, traces_path, language)
 
-    tr = pd.read_pickle('extracted-traces.pkl')
+    tr = pd.read_pickle(traces_path)
     print()
 
 if __name__ == '__main__':

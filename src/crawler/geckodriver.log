@@ -666,3 +666,42 @@ JavaScript error: https://www.kaggle.com/static/assets/app.js?v=17ae755a5e93e249
 Exiting due to channel error.
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
 Exiting due to channel error.
+1611814049273	geckodriver	INFO	Listening on 127.0.0.1:49799
+1611814049276	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekEzcSI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611814051813	Marionette	INFO	Listening on port 42871
+1611814051922	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: e.report(...) is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: e.report(...) is undefined
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=d1994190b8d52c704acc, line 20: Error: To see the data you need to agree to the competition rules
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=d1994190b8d52c704acc, line 20: Error: To see the data you need to agree to the competition rules
+1611814060680	Marionette	INFO	Stopped listening on port 42871
+1611814130565	geckodriver	INFO	Listening on 127.0.0.1:36969
+1611814130569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejW7iRn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611814133045	Marionette	INFO	Listening on port 39069
+1611814133113	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: e.report(...) is undefined
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=d1994190b8d52c704acc, line 20: Error: To see the data you need to agree to the competition rules
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: n.context is undefined
+JavaScript error: https://www.kaggle.com/static/assets/vendor.js?v=c675891ef7268c88a656, line 2: TypeError: e.report(...) is undefined
+JavaScript error: https://www.kaggle.com/static/assets/app.js?v=d1994190b8d52c704acc, line 20: Error: To see the data you need to agree to the competition rules
+1611814148107	Marionette	INFO	Stopped listening on port 39069
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
